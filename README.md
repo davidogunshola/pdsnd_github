@@ -14,7 +14,6 @@ The main file is the bikeshare.py file
 ### Credits
 I got stuck severally on the project, but the following forums and repos were extremely helpful. I studied their codes and found my way around the project.
 
-https://stackoverflow.com/questions/23377818/loop-on-if-statement-to-reject-invalid-input?rq=1
 https://github.com/xhlow/udacity-bikeshare-project/blob/master/bikeshare.py
 https://github.com/philribbens/udacity-bikeshare-project/blob/master/bikeshare.py
 https://github.com/ozlerhakan/bikeshare/blob/master/bikeshare.py
