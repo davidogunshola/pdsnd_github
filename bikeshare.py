@@ -48,46 +48,46 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hey there, my name is David! I would like to guide you to explore stats from a US bikeshare database!')
+    print('Welcome to my US bikeshare database explorer!')
     print('...')
     print('...')
     print('...')
-    print('If you are ready, then let/s get started.')
+    print('Let us get started.')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
   
     while True:
         try:
-            city = input('Select the City you want to view data for. You can choose between Chicago, New York and Washington?\n').lower()
+            city = input('Select the City: Chicago, New York or Washington?\n').lower()
         except ValueError:
             continue
         if city in cities:
             break
-        print('Unfortunately, we do no have data for this city. You can only select between Chicago, New York and Washington.')
+        print('Invalid. Try again.')
             
         
    
     #choose a month
     while True:
         try:
-            month = input('Choose a month for which you want to review data. Only January to June are applicable? Type it in full. Choose "all" for all months.\n').lower()
+            month = input('Select Month.  January to June only. Type it in full. Choose "all" for all months.\n').lower()
         except ValueError:
             
             continue
         if month in months:
             break
-        print('You have to choose a month between January and June.')
+        print('Invalid Month. Only January to June.')
    
     #choose a day of the week
     
     while True:
         try:
-            day = input('Choose one day from Monday to Sunday? Choose "all" for all days.\n').lower()
+            day = input('Select day. Monday to Sunday? Choose "all" for all days.\n').lower()
         except ValueError:
             
             continue
         if day in weekdays:
             break
-        print('You have to choose a day. Type it in full.')
+        print('Nope. Type it in full.')
    
         
     print('-'*40)
@@ -288,4 +288,4 @@ def main():
       
 
 if __name__ == "__main__":
-	main()
+    main()
