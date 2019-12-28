@@ -21,7 +21,7 @@ weekdays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 's
 
 
 #convert the month number to the name of the month
-def month_to_month(month):
+def get_month_name(month):
     intmonth = int(month)
     if intmonth == 1:
         monthname = 'January'
@@ -139,7 +139,7 @@ def time_stats(df, city):
 
     # display the most common month
     most_common_month = df['month'].value_counts().idxmax()
-    print("The most common month is :", month_to_month(most_common_month))
+    print("The most common month is :", get_month_name(most_common_month))
 
     # display the most common day of week
     most_common_day_of_week = df['day_of_week'].value_counts().idxmax()
